@@ -1,0 +1,12 @@
+@import 'src/styles/vars';
+
+.footer-content {
+  margin-top: 3rem;
+  
+  .signature {
+    text-decoration: overline;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #e5676a;
+  }
+}

@@ -1,0 +1,21 @@
+@import 'src/styles/vars';
+
+.header-content {
+  padding: 3rem;
+
+  .header-title {
+    font-size: 50px;
+    margin-left: $margin-sides;
+    background: 
+    -webkit-linear-gradient( #e5676a, #cb5d65, #964657, #482445 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+    .WCS-img {
+      width: 90px;
+      margin-right: $margin-sides;
+    }
+  }
+  
+}
+

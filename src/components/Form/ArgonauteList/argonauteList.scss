@@ -1,0 +1,28 @@
+@import 'src/styles/vars';
+
+.argonaute-content {
+  height: 550px;
+  background-image: url('./src/assets/images/papyrus.png');
+  background-repeat: no-repeat;
+  background-size: 400px;
+  background-position: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color:  #482445;
+  font-size: 23px;
+  font-style: italic;
+    
+
+  .argonaute-title {
+    margin-top: 6rem;
+    padding-bottom: 1.5em;
+  }
+
+  .member-list {
+
+    .member-item {
+      padding-bottom: 3px;
+      
+    }
+  }
+}

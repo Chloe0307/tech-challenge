@@ -1,0 +1,12 @@
+@import 'src/styles/vars';
+
+.app {
+  width: 960px;
+  margin: 1em auto;
+  text-align: center;
+  background-color: #18103B;
+  font-family: $font-family;
+  color: white;
+  border-radius: $border-radius;
+}
+

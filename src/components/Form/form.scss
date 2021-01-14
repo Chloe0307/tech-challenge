@@ -1,0 +1,39 @@
+@import 'src/styles/vars';
+
+.main-content {
+  width: 900px;
+  border: 2px solid #e5676a;
+  border-radius: $border-radius;
+  margin: auto;
+
+  .add-argonaute-title {
+    margin: auto;
+    padding-bottom: 3px;
+    font-size: 30px;
+    border-bottom: 1px solid;
+    width: 350px;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    color:#e5676a;
+  }
+
+  .new-member-form {
+
+    padding-bottom: 2rem;
+
+    .label-name {
+      margin-right: $margin-sides;
+    }
+
+    .input-name-argonaute {
+      padding-left: 5px;
+      border-radius: $border-radius;
+    }
+
+    .add-button {
+      border-radius: $border-radius;
+      margin-left: 5px;
+    }
+  }
+  
+}

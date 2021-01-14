@@ -1,17 +1,20 @@
-// == Import npm
+// Imports NPM
 import React from 'react';
 
-// == Import
-import reactLogo from './react-logo.svg';
-import './styles.css';
+// Imports components
+import Header from 'src/components/Header';
+import Form from 'src/components/Form';
+import Footer from 'src/components/Footer';
 
-// == Composant
+// import style
+import './styles.scss';
+
 const App = () => (
   <div className="app">
-    <img src={reactLogo} alt="react logo" />
-    <h1>Composant : App</h1>
+    <Header />
+    <Form />
+    <Footer />
   </div>
 );
 
-// == Export
 export default App;
