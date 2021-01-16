@@ -2,19 +2,29 @@
 // Imports NPM
 import React, { useState } from 'react';
 
-// Import datas files
-// import members from '../../src/members';
 // Import component
 import ArgonauteList from 'src/components/Form/ArgonauteList';
+
+// Import datas files
+import members from '../../members';
 
 // Import SCSS
 import './form.scss';
 
-const Form = () => (
+const Form = () => {
+  // const [id, setId] = useState(1);
+  const [firstname, setFirstname] = useState('');
+
+  const handleChange = (event) => {
+    getFirstname(event.currentTarget.value);
+  };
+
+  return (
     <main className="main-content">
       <h2 className="add-argonaute-title">Ajouter un(e) Argonaute</h2>
       <form
         className="new-member-form"
+        // onSubmit={handleSubmit}
       >
         <label
           className="label-name"
@@ -24,12 +34,12 @@ const Form = () => (
         </label>
         <input
           className="input-name-argonaute"
-          // id={members.length + 1}
+          // key={id}
+          value={firstname}
           name="firstname"
           type="text"
-          required
           placeholder="Charalampos"
-          // onSubmit={createMember}
+          onChange={handleChange}
         />
         <button
           className="add-button"
@@ -40,6 +50,11 @@ const Form = () => (
       </form>
       <ArgonauteList />
     </main>
-);
+  );
+};
+
+// Form.propTypes = {
+//   firstname: PropTypes.string.isRequired,
+// };
 
 export default Form;
