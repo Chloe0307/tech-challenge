@@ -13,11 +13,20 @@ import './form.scss';
 
 const Form = () => {
   // const [id, setId] = useState(1);
-  const [firstname, setFirstname] = useState('');
+  const [firstname, setFirstname] = useState('salut chouchou');
 
-  const handleChange = () => {
-    setFirstname();
+  console.log(setFirstname);
+
+  const handleChangeFirstname = (e) => {
+    // setFirstname(e.target.value);
+    const firstnameValue = e.target.value;
+    console.log(firstnameValue);
   };
+
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   members.push();
+  // };
 
   return (
     <main className="main-content">
@@ -39,7 +48,7 @@ const Form = () => {
           name="firstname"
           type="text"
           placeholder="Charalampos"
-          onChange={handleChange}
+          onChange={handleChangeFirstname}
         />
         <button
           className="add-button"

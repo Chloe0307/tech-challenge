@@ -9,7 +9,7 @@ import './argonauteList.scss';
 const ArgonauteList = () => {
 
   // eslint-disable-next-line no-console
-  console.log(members);
+  // console.log(members);
 
   return (
     <div className="argonaute-content">
