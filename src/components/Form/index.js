@@ -15,8 +15,8 @@ const Form = () => {
   // const [id, setId] = useState(1);
   const [firstname, setFirstname] = useState('');
 
-  const handleChange = (event) => {
-    getFirstname(event.currentTarget.value);
+  const handleChange = () => {
+    setFirstname();
   };
 
   return (
