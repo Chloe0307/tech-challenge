@@ -13,27 +13,23 @@ import './form.scss';
 
 const Form = () => {
   // const [id, setId] = useState(1);
-  const [firstname, setFirstname] = useState('salut chouchou');
+  const [firstname, setFirstname] = useState('');
+  const [refresh, setRefresh] = useState(false);
 
-  console.log(setFirstname);
-
-  const handleChangeFirstname = (e) => {
-    // setFirstname(e.target.value);
-    const firstnameValue = e.target.value;
-    console.log(firstnameValue);
+  const handleSubmit = () => {
+    setRefresh(!refresh);
+    members.push({
+      id: members.length + 1,
+      name: firstname,
+    });
+    // console.log(members);
   };
-
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   members.push();
-  // };
 
   return (
     <main className="main-content">
       <h2 className="add-argonaute-title">Ajouter un(e) Argonaute</h2>
       <form
         className="new-member-form"
-        // onSubmit={handleSubmit}
       >
         <label
           className="label-name"
@@ -48,13 +44,14 @@ const Form = () => {
           name="firstname"
           type="text"
           placeholder="Charalampos"
-          onChange={handleChangeFirstname}
+          onChange={(e) => setFirstname(e.target.value)}
         />
         <button
           className="add-button"
-          type="submit"
+          type="button"
+          onClick={handleSubmit}
         >
-          Valider
+          Valider {firstname}
         </button>
       </form>
       <ArgonauteList />
@@ -62,8 +59,5 @@ const Form = () => {
   );
 };
 
-// Form.propTypes = {
-//   firstname: PropTypes.string.isRequired,
-// };
 
 export default Form;
